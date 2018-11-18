@@ -1,84 +1,98 @@
 
-// UI Variables
-// -------------------
+// Themer colors
 
-// These are the official UI variables that every UI theme should define.
-// It allows other packages to match your theme.
+@accent0: #DC241F;
+@accent1: #EF7B10;
+@accent2: #FFD429;
+@accent3: #007632;
+@accent4: #00AFAD;
+@accent5: #0099D8;
+@accent6: #9364CC;
+@accent7: #F4A9BE;
 
-// Overrides: atom/static/variables/ui-variables.less
-
-// Try to edit some of the values below to see your theme change.
-// A good start is to change the color of the `@base-background-color` variable.
-
-
-// Text Colors
-@text-color:           hsl(0,0%,66%);
-@text-color-subtle:    hsl(0,0%,50%);
-@text-color-highlight: hsl(0,0%,94%);
-@text-color-selected:  hsl(0,0%,100%);
-
-@text-color-info:    hsl(219,  79%, 66%);
-@text-color-success: hsl(140,  44%, 62%);
-@text-color-warning: hsl( 36,  60%, 72%);
-@text-color-error:   hsl(  9, 100%, 64%);
-
-// Background colors
-@background-color-info:    hsl(208, 100%, 50%);
-@background-color-success: hsl(160,  70%, 36%);
-@background-color-warning: hsl(32,   60%, 50%);
-@background-color-error:   hsl(0,    70%, 50%);
-
-@background-color-highlight: lighten(@base-background-color, 5%);
-@background-color-selected:  lighten(@base-background-color, 10%);
-@app-background-color:       darken(@base-background-color, 5%);
+@shade0: #000000;
+@shade1: #171818;
+@shade2: #2E2F30;
+@shade3: #454748;
+@shade4: #5C5E5F;
+@shade5: #737677;
+@shade6: #8A8D8F;
+@shade7: #A1A5A7;
 
 // Base colors
-@base-background-color: hsl(222,6%,22%);
-@base-border-color:     darken(@base-background-color, 8%);
+
+@base-background-color: @shade0;
+@base-border-color:     @shade1;
+
+// Text Colors
+
+@text-color:           @shade6;
+@text-color-subtle:    @shade3;
+@text-color-highlight: @shade7;
+@text-color-selected:  @shade7;
+
+@text-color-info:    @accent5;
+@text-color-success: @accent3;
+@text-color-warning: @accent1;
+@text-color-error:   @accent0;
+
+// Background colors
+
+@background-color-info:    @accent5;
+@background-color-success: @accent3;
+@background-color-warning: @accent1;
+@background-color-error:   @accent0;
+
+@background-color-highlight: @shade1;
+@background-color-selected:  @shade2;
+@app-background-color:       @base-background-color;
 
 // Component colors
+
 @pane-item-background-color: @base-background-color;
 @pane-item-border-color:     @base-border-color;
 
 @input-background-color: @app-background-color;
 @input-border-color:     @base-border-color;
 
-@tool-panel-background-color: @base-background-color;
+@tool-panel-background-color: @shade1;
 @tool-panel-border-color:     @base-border-color;
 
-@inset-panel-background-color: lighten(@base-background-color, 4%);
-@inset-panel-border-color:     @base-border-color;
+@inset-panel-background-color: @shade1;
+@inset-panel-border-color:     @shade2;
 
-@panel-heading-background-color: lighten(@base-background-color, 4%);
+@panel-heading-background-color: @shade1;
 @panel-heading-border-color:     @base-border-color;
 
-@overlay-background-color: lighten(@base-background-color, 5%);
+@overlay-background-color: @shade1;
 @overlay-border-color:     @base-border-color;
 
-@button-background-color:          lighten(@base-background-color, 10%);
-@button-background-color-hover:    lighten(@button-background-color, 12%);
+@button-background-color:          @shade2;
+@button-background-color-hover:    @shade3;
 @button-background-color-selected: @button-background-color-hover;
 @button-border-color:              @base-border-color;
 
 @tab-bar-background-color:    @base-background-color;
 @tab-bar-border-color:        @base-border-color;
 @tab-background-color:        @tab-bar-background-color;
-@tab-background-color-active: lighten(@tab-bar-background-color, 10%);
+@tab-background-color-active: @base-border-color;
 @tab-border-color:            @base-border-color;
 
 @tree-view-background-color: @base-background-color;
 @tree-view-border-color:     @base-border-color;
 
 // Site colors
-@ui-site-color-1: hsl(208, 100%, 50%); // blue
-@ui-site-color-2: hsl(160,  70%, 42%); // green
-@ui-site-color-3: hsl(32,   60%, 50%); // orange
-@ui-site-color-4: #D831B0;             // pink
-@ui-site-color-5: #EBDD5B;             // yellow
+
+@ui-site-color-1: @accent5;
+@ui-site-color-2: @accent3;
+@ui-site-color-3: @accent1;
+@ui-site-color-4: @accent7;
+@ui-site-color-5: @accent2;
 
 // Sizes
+
 @font-size: 12px;
-@input-font-size: 14px;
+@input-font-size: 12px;
 
 @disclosure-arrow-size: 12px;
 
@@ -87,8 +101,9 @@
 @component-icon-size: 16px;
 @component-line-height: 25px;
 
-@tab-height: 30px;
+@tab-height: 36px;
 
 // Misc
+
 @component-border-radius: 2px;
 @font-family: '.SFNSText-Regular', 'SF UI Text', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;

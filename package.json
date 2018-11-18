@@ -1,8 +1,8 @@
 {
-  "name": "ui-theme-template",
+  "name": "picadilly-ui",
   "theme": "ui",
   "version": "0.0.0",
-  "description": "A short description of your UI theme",
+  "description": "My UI theme to go with my tube inspired syntax theme!",
   "keywords": [
     "ui",
     "theme"

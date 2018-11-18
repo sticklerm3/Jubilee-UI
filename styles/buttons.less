@@ -1,10 +1,4 @@
 
-// Buttons
-// -------------------
-
-// Overrides: atom/atom/static/buttons.less
-
-
 .btn {
   color: lighten(@text-color, 6%);
   background-color: @button-background-color;
@@ -27,9 +21,6 @@
   }
 }
 
-
-// Colored buttons -----------------------
-
 .btn.btn-primary { .btn-color(@background-color-info); }
 .btn.btn-info    { .btn-color(@background-color-info); }
 .btn.btn-success { .btn-color(@background-color-success); }
@@ -37,11 +28,12 @@
 .btn.btn-error   { .btn-color(@background-color-error); }
 
 .btn-color(@bg) {
-  color: @text-color-selected;
+  color: @base-background-color;
   background-color: @bg;
   &:hover,
   &:focus {
     background-color: lighten(@bg, 4%);
+    color: @base-background-color;
   }
   &:active {
     background-color: darken(@bg, 4%);
@@ -55,9 +47,6 @@
   }
 }
 
-
-// Button Group -----------------------
-
 .btn-group > .btn {
-  border-color: hsla(0,0%,0%,.2);
+  border-color: hsla(0,0%,0%,.2);;
 }
