@@ -6,8 +6,10 @@
   "keywords": [
     "ui",
     "theme"
+    "atom"
+    "london-transport"
   ],
-  "repository": "https://github.com/atom-community/ui-theme-template",
+  "repository": "https://github.com/sticklerm3/Jubilee-UI",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
